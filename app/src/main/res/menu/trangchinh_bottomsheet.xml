@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomsheet_trangchinh_trending"
+        android:title="Trending"
+        android:icon="@drawable/image_trend"/>
+    <item
+        android:id="@+id/bottomsheet_trangchinh_movie"
+        android:title="Movie"
+        android:icon="@drawable/image_movie"/>
+    <item
+        android:id="@+id/bottomsheet_trangchinh_zingchart"
+        android:title=""
+        android:enabled="false"/>
+    <item
+        android:id="@+id/bottomsheet_trangchinh_post"
+        android:title="Post"
+        android:icon="@drawable/image_post"/>
+    <item
+        android:id="@+id/bottomsheet_trangchinh_profile"
+        android:title="Profile"
+        android:icon="@drawable/image_profile"/>
+</menu>

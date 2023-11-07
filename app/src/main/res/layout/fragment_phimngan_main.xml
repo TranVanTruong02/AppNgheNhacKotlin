@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomsheet_xh_phatnhac_main_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.PhimNgan.View.FragmentPhimNganMain"
+    android:background="#4C4C4C"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="10dp" />
+
+    <LinearLayout
+        android:id="@+id/bottomsheet_xh_phatnhac_main_linnerlayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/bottomsheet_xh_phatnhac_main_viewpager2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/background_xuhuong_bottom_xh_phatnhac_main"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/bottomsheet_xh_phatnhac_main_exit_tab"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/image_bottom_phatnhac" />
+
+            <TextView
+                android:id="@+id/bottomsheet_xh_phatnhac_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Phát Nhạc"
+                android:textColor="#CCFFFFFF"
+                android:textSize="16dp"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/bottomsheet_xh_phatnhac_main_luachon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:scaleType="center"
+                android:src="@drawable/image_dots" />
+        </RelativeLayout>
+
+        <me.relex.circleindicator.CircleIndicator3
+            android:id="@+id/bottomsheet_xh_phatnhac_main_circleindicator"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            app:ci_gravity="center" />
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/bottomsheet_xh_phatnhac_main_viewpager2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/bottomsheet_xh_phatnhac_main_seekbar"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toRightOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_linnerlayout_1"
+        app:layout_constraintWidth_default="spread" />
+
+    <SeekBar
+        android:id="@+id/bottomsheet_xh_phatnhac_main_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomsheet_xh_phatnhac_main_linnerlayout_2"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toRightOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_viewpager2" />
+
+    <LinearLayout
+        android:id="@+id/bottomsheet_xh_phatnhac_main_linnerlayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomsheet_xh_phatnhac_main_play"
+        app:layout_constraintRight_toRightOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_seekbar">
+
+        <TextView
+            android:id="@+id/bottomsheet_xh_phatnhac_main_tgchay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bottomsheet_xh_phatnhac_main_tongtg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="5:00"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/bottomsheet_xh_phatnhac_main_tronbai"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_random_off"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_truoc"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/bottomsheet_xh_phatnhac_main_truoc"
+        app:layout_constraintTop_toTopOf="@+id/bottomsheet_xh_phatnhac_main_truoc" />
+
+    <ImageButton
+        android:id="@+id/bottomsheet_xh_phatnhac_main_truoc"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_playpause_left"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_play"
+        app:layout_constraintLeft_toRightOf="@+id/bottomsheet_xh_phatnhac_main_tronbai"
+        app:layout_constraintRight_toLeftOf="@+id/bottomsheet_xh_phatnhac_main_play"
+        app:layout_constraintTop_toTopOf="@+id/bottomsheet_xh_phatnhac_main_play" />
+
+    <ImageButton
+        android:id="@+id/bottomsheet_xh_phatnhac_main_play"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_pause"
+        app:layout_constraintBottom_toTopOf="@+id/bottomsheet_xh_phatnhac_main_binhluan"
+        app:layout_constraintLeft_toRightOf="@+id/bottomsheet_xh_phatnhac_main_truoc"
+        app:layout_constraintRight_toLeftOf="@+id/bottomsheet_xh_phatnhac_main_sau"
+        app:layout_constraintTop_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_linnerlayout_2" />
+
+    <ImageButton
+        android:id="@+id/bottomsheet_xh_phatnhac_main_sau"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_playpause_right"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_play"
+        app:layout_constraintLeft_toRightOf="@+id/bottomsheet_xh_phatnhac_main_play"
+        app:layout_constraintRight_toLeftOf="@+id/bottomsheet_xh_phatnhac_main_laplai"
+        app:layout_constraintTop_toTopOf="@+id/bottomsheet_xh_phatnhac_main_play" />
+
+    <ImageButton
+        android:id="@+id/bottomsheet_xh_phatnhac_main_laplai"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_repeat_off"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_sau"
+        app:layout_constraintLeft_toRightOf="@+id/bottomsheet_xh_phatnhac_main_sau"
+        app:layout_constraintRight_toRightOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/bottomsheet_xh_phatnhac_main_sau" />
+
+    <ImageView
+        android:id="@+id/bottomsheet_xh_phatnhac_main_binhluan"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_comment"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline4"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline2"
+        app:layout_constraintRight_toLeftOf="@+id/bottomsheet_xh_phatnhac_main_download"
+        app:layout_constraintTop_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_play" />
+
+    <ImageView
+        android:id="@+id/bottomsheet_xh_phatnhac_main_download"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_download"
+        app:layout_constraintTop_toTopOf="@+id/bottomsheet_xh_phatnhac_main_binhluan"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_binhluan"
+        app:layout_constraintLeft_toRightOf="@+id/bottomsheet_xh_phatnhac_main_binhluan"
+        app:layout_constraintRight_toLeftOf="@+id/bottomsheet_xh_phatnhac_main_addplaylist"/>
+
+    <ImageView
+        android:id="@+id/bottomsheet_xh_phatnhac_main_addplaylist"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_playlist_add"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_playlistsong"
+        app:layout_constraintLeft_toRightOf="@+id/bottomsheet_xh_phatnhac_main_download"
+        app:layout_constraintRight_toLeftOf="@+id/bottomsheet_xh_phatnhac_main_playlistsong"
+        app:layout_constraintTop_toTopOf="@+id/bottomsheet_xh_phatnhac_main_playlistsong" />
+
+    <ImageView
+        android:id="@+id/bottomsheet_xh_phatnhac_main_playlistsong"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image_playlist_play"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomsheet_xh_phatnhac_main_binhluan"
+        app:layout_constraintLeft_toRightOf="@+id/bottomsheet_xh_phatnhac_main_addplaylist"
+        app:layout_constraintRight_toRightOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="@+id/bottomsheet_xh_phatnhac_main_binhluan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Zing</string>
+    <string name="navigation_drawer_open">Open NavigationView</string>
+    <string name="navigation_drawer_close">Close NavigationView</string>
+</resources>

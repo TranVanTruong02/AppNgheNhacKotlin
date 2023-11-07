@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/image_nav_header"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/trangchinh_navigation_floatingactionbutton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/trangchinh_navigation_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trần Văn Trường"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/trangchinh_navigation_floatingactionbutton"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_bottom_phatnhac"
+            android:layout_toRightOf="@+id/trangchinh_navigation_textview"
+            android:layout_centerVertical="true"
+            app:tint="@color/black" />
+        <ImageButton
+            android:id="@+id/trangchinh_navigation_imagebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_settings"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

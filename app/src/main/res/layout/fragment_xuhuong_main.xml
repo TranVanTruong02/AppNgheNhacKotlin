@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.XuHuong.View.FragmentXuHuongViewMain"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:id="@+id/fragment_xuhuong_main_linnerlayout"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <fragment
+                        android:id="@+id/fragment_xuhuong_quangcao"
+                        android:name="com.example.zingtt2023.Fragment.Fragment_XuHuong.Fragment_XuHuong_QuangCao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:layout="@layout/support_simple_spinner_dropdown_item" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:scrollbars="none">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:paddingRight="10dp"
+                            android:gravity="start|center">
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="60dp"
+                                android:orientation="vertical"
+                                android:gravity="center">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="8dp">
+                                    <ImageView
+                                        android:id="@+id/fragment_xuhuong_main_image_1"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/image_fragment_xuhuong_main_music"
+                                        android:background="#CCF6D2D2"
+                                        android:scaleType="center"/>
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Nhạc Mới"
+                                    android:textSize="14dp"
+                                    android:textColor="#47A2EA"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="60dp"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="8dp">
+
+                                    <ImageView
+                                        android:id="@+id/fragment_xuhuong_main_image_2"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="#BCDFFB"
+                                        android:scaleType="center"
+                                        android:src="@drawable/image_fragment_xuhuong_main_categories" />
+                                </androidx.cardview.widget.CardView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Thể Loại"
+                                    android:textColor="#47A2EA"
+                                    android:textSize="14dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="60dp"
+                                android:orientation="vertical"
+                                android:gravity="center">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="8dp">
+                                    <ImageView
+                                        android:id="@+id/fragment_xuhuong_main_image_3"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/image_fragment_xuhuong_main_love"
+                                        android:background="#80F16997"
+                                        android:scaleType="center"/>
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Yiu Thích"
+                                    android:textSize="14dp"
+                                    android:textColor="#47A2EA"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="60dp"
+                                android:orientation="vertical"
+                                android:gravity="center">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="8dp">
+                                    <ImageView
+                                        android:id="@+id/fragment_xuhuong_main_image_4"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/image_fragment_xuhuong_main_star"
+                                        android:background="#AAEAE4"
+                                        android:scaleType="center"/>
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Top 100"
+                                    android:textSize="14dp"
+                                    android:textColor="#47A2EA"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="60dp"
+                                android:orientation="vertical"
+                                android:gravity="center">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="8dp">
+                                    <ImageView
+                                        android:id="@+id/fragment_xuhuong_main_image_5"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:background="#F8F0A9"
+                                        android:scaleType="center"
+                                        android:src="@drawable/image_fragment_xuhuong_main_ngaunhien" />
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ngẫu Nhiên"
+                                    android:textSize="14dp"
+                                    android:textColor="#47A2EA"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="80dp"
+                                android:layout_height="60dp"
+                                android:orientation="vertical"
+                                android:gravity="center">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    app:cardCornerRadius="8dp">
+                                    <ImageView
+                                        android:id="@+id/fragment_xuhuong_main_image_6"
+                                        android:layout_width="40dp"
+                                        android:layout_height="40dp"
+                                        android:src="@drawable/image_fragment_xuhuong_main_sukien"
+                                        android:background="#E9A8F4"
+                                        android:scaleType="center"/>
+                                </androidx.cardview.widget.CardView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Sự Kiện"
+                                    android:textSize="14dp"
+                                    android:textColor="#47A2EA"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="3dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

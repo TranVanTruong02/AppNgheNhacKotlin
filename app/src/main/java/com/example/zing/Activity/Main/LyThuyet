@@ -1,0 +1,7 @@
+Lý Thuyết:
+
+BlurView
+    BlurView: Lớp này cung cấp một View có thể được sử dụng để tạo hiệu ứng mờ cho View con của nó.
+    BlurMaskFilter: Lớp này cung cấp một bộ lọc được sử dụng để tạo hiệu ứng mờ cho các View.
+    BlurTransformation: Lớp này cung cấp một lớp chuyển đổi được sử dụng để tạo hiệu ứng mờ cho các hình ảnh.
+
