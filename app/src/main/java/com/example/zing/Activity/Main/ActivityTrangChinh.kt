@@ -1,11 +1,12 @@
 package com.example.zing.Activity.Main
 
-import androidx.appcompat.app.AppCompatActivity
+import android.R
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -20,6 +21,8 @@ import com.google.android.material.appbar.CollapsingToolbarLayout
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
+import com.ramotion.paperonboarding.PaperOnboardingPage
+
 
 class ActivityTrangChinh : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -35,7 +38,6 @@ class ActivityTrangChinh : AppCompatActivity(), NavigationView.OnNavigationItemS
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_trangchinh)
-
         TrangChinh_AnhXa()
         ToolBar_Tab()
         BottomNavigationView_Tab()

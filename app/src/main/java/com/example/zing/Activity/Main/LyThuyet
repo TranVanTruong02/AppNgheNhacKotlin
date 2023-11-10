@@ -5,3 +5,41 @@ BlurView
     BlurMaskFilter: Lớp này cung cấp một bộ lọc được sử dụng để tạo hiệu ứng mờ cho các View.
     BlurTransformation: Lớp này cung cấp một lớp chuyển đổi được sử dụng để tạo hiệu ứng mờ cho các hình ảnh.
 
+Từ khóa Private cho biến giao diện
+    Thêm từ khóa private vào các biến giao diện là một cách thường được sử dụng để giữ các biến này riêng tư (private) và tránh
+    truy cập trực tiếp từ bên ngoài lớp. Điều này giúp đảm bảo tính đóng gói và ẩn thông tin chi tiết về cài đặt giao diện của lớp.
+
+Camel case
+    Camel case là một quy ước đặt tên biến, phương thức và lớp trong lập trình, trong đó các từ trong tên được viết liền nhau và từ
+    đầu tiên của mỗi từ sau được viết hoa, trừ từ đầu tiên.
+
+    Ví dụ:
+          Tên biến: myVariable, firstName, totalAmount
+          Tên phương thức: getUserInfo(), calculateTotal(), setFirstName()
+          Tên lớp: MyClass, UserModel, PaymentService
+
+Kiểu dữ liệu
+    Kiểu dữ liệu int:
+        Biểu diễn: Kiểu int được sử dụng để lưu trữ các số nguyên không có phần thập phân.
+        Kích thước: Thông thường, kiểu int có kích thước 4 byte (32 bit).
+        Phạm vi giá trị: Trong hầu hết các ngôn ngữ lập trình thông dụng, kiểu int có thể lưu trữ các giá trị từ -2,147,483,648 đến 2,147,483,647.
+    Kiểu dữ liệu long:
+        Biểu diễn: Kiểu long được sử dụng để lưu trữ các số nguyên không có phần thập phân.
+        Kích thước: Thông thường, kiểu long có kích thước 8 byte (64 bit).
+        Phạm vi giá trị: Kiểu long có thể lưu trữ các giá trị từ -9,223,372,036,854,775,808 đến 9,223,372,036,854,775,807.
+    Kiểu dữ liệu float:
+        Biểu diễn: Kiểu float được sử dụng để lưu trữ các số thực có phần thập phân.
+        Kích thước: Thông thường, kiểu float có kích thước 4 byte (32 bit).
+        Phạm vi giá trị: Kiểu float có thể lưu trữ các giá trị số thực trong khoảng từ khoảng ±1.4e-45 đến ±3.4e+38, và có độ chính xác xấp xỉ 6-7 chữ số thập phân.
+    Kiểu dữ liệu double:
+        Biểu diễn: Kiểu double cũng được sử dụng để lưu trữ các số thực có phần thập phân, nhưng có độ chính xác cao hơn so với kiểu float.
+        Kích thước: Thông thường, kiểu double có kích thước 8 byte (64 bit).
+        Phạm vi giá trị: Kiểu double có thể lưu trữ các giá trị số thực trong khoảng từ khoảng ±4.9e-324 đến ±1.8e+308, và có độ chính xác xấp xỉ 15 chữ số thập phân.
+    Kiểu dữ liệu boolean:
+        Biểu diễn: Kiểu boolean được sử dụng để biểu thị các giá trị logic, chỉ có hai giá trị có thể nhận là true hoặc false.
+        Kích thước: Thông thường, kích thước của kiểu boolean không cố định và thường là 1 byte.
+        Phạm vi giá trị: Kiểu boolean có thể nhận giá trị true (đúng) hoặc false (sai).
+    Kiểu dữ liệu string:
+        Biểu diễn: Kiểu string được sử dụng để lưu trữ chuỗi các ký tự.
+        Kích thước: Kích thước của kiểu string thay đổi tùy thuộc vào độ dài của chuỗi.
+        Phạm vi giá trị: Kiểu string có thể lưu trữ bất kỳ chuỗi ký tự nào, bao gồm cả văn bản, số, ký tự đặc biệt và nhiều hơn nữa.

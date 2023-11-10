@@ -53,6 +53,9 @@ dependencies {
     implementation ("me.relex:circleindicator:2.1.6")
     implementation ("de.hdodenhof:circleimageview:2.1.0")
     implementation ("com.squareup.picasso:picasso:2.8")
+    implementation ("com.github.bumptech.glide:glide:4.13.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.13.0")
+    implementation("com.ramotion.paperonboarding:paper-onboarding:1.1.3")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
